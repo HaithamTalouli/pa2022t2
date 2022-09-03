@@ -1,11 +1,11 @@
 import { query } from './_generated/server'
 
-export default query(async ({ db }, userName: string): Promise<any> => {
-  console.log(userName)
+export default query(async ({ db }, eventPosterName: string): Promise<any> => {
+  console.log(eventPosterName)
   const userDoc = await db
-    .table('users')
-    .filter((q) => q.eq(q.field('name'), userName))
-    .first()
+    .table('posts')
+    .filter((q) => q.eq(q.field('posterName'), eventPosterName))
+    .collect()
   console.log('Got stuff')
   if (userDoc === null) {
     console.log("its empty");

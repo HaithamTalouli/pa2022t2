@@ -7,11 +7,24 @@ import { useCallback } from 'react'
 import getUser from '../convex/getUser'
 
 const Home: NextPage = () => {
-  const getUser = useQuery('getUser', 'ham')
+  const user = useQuery('getUser', 'ham')
+  const allPostsByHam = useQuery('getPostsByPoster', 'ham')
+  const allPostsNotByHam = useQuery('getPostsByNonPoster', 'ham')
+  console.log(user)
   const addUser = useMutation('addUser')
   const addHam = useCallback(() => addUser('ham', 'ham@hotmail.com', '12345'), [addUser])
+  const addPost = useMutation('addPost')
+  const addHamPost1 = useCallback(() => addPost('hams post', 123456, 'fun event for cleaning', 3, 'monkaw.jpg', 'hama@hotmail.com', 'ham'), [addPost])
+  const addHamPost2 = useCallback(() => addPost('ham2s post', 123456, 'fun event for cleaning stuff', 3, 'monkas.jpg', 'hamantha@hotmail.com', 'ham'), [addPost])
+  const addJohnPost = useCallback(() => addPost('john post', 123456, 'fun event for cleaning things', 3, 'monkaw.jpg', 'john@hotmail.com', 'john'), [addPost])
+  const addDoePost = useCallback(() => addPost('doe post', 123456, 'fun event for cleaning stuff and things', 3, 'monkaw.jpg', 'doe@hotmail.com', 'doe'), [addPost])
+
   // const getham = useCallback(() => getUser('ham'), [getUser])
   // const incrementByOne = useCallback(() => increment('clicks', 1), [increment])
+  console.log("ham posts:")
+  console.log(allPostsByHam)
+  console.log("non ham posts:")
+  console.log(allPostsNotByHam)
 
   return (
     <div className={styles.container}>
@@ -27,12 +40,21 @@ const Home: NextPage = () => {
           <a href="https://convex.dev">Convex</a>
         </h1>
         
-        <p className={styles.description}>
-          {"Here's the counter:"} {getUser}
-        </p>
-        <button className={styles.button} onClick={addHam}>
-          Add One!
-        </button>
+        { <button className={styles.button} onClick={addHam}>
+          Add One Ham as user
+        </button> }
+        { <button className={styles.button} onClick={addHamPost1}>
+          Add Ham Post 1
+        </button> }
+        { <button className={styles.button} onClick={addHamPost2}>
+          Add Ham Post 2
+        </button> }
+        { <button className={styles.button} onClick={addJohnPost}>
+          Add John Post 1
+        </button> }
+        { <button className={styles.button} onClick={addDoePost}>
+          Add Doe Post 1
+        </button> }
       </main>
 
       <footer className={styles.footer}>
