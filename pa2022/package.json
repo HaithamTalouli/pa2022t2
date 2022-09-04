@@ -9,6 +9,7 @@
     "convex": "latest",
     "next": "^12.2.5",
     "react": "^18.2.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0"
   },
