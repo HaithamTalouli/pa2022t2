@@ -1,7 +1,7 @@
 import { mutation } from './_generated/server'
 
 export default mutation(
-  async ({ db }, eventTitle: string, eventDate: number, eventDescription: string, numOfApplicants: number, eventPicture: string, eventEmail: string, eventPosterName: string) => {
+  async ({ db }, eventTitle: string, eventDate: number, eventDescription: string, applicantName: string, eventPicture: string, eventEmail: string, eventPosterName: string) => {
     const userDoc = await db
       .table('posts')
       .filter((q) => q.eq(q.field('title'), eventTitle))
@@ -11,7 +11,8 @@ export default mutation(
         title: eventTitle,
         date: eventDate,
         description: eventDescription,
-        applicantAmount: numOfApplicants,
+        applicants: [applicantName],
+        applicantNum: 1,
         picture: eventPicture,
         email: eventEmail,
         posterName: eventPosterName
