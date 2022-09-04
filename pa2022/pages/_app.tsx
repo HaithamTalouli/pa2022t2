@@ -9,6 +9,7 @@ const convex = new ConvexReactClient(clientConfig)
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ConvexProvider client={convex}>
+      <Component {...pageProps}></Component>
       <Navbar />
     </ConvexProvider>
   )
