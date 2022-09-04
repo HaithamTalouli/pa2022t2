@@ -1,0 +1,33 @@
+.card{
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 black;
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px 0 20px 50px;
+    transition: 0.3s;
+    width: 100%;
+}
+.title {
+    font-size: 35px;
+    line-height: 40px;
+}
+.poster_name {
+    text-decoration: underline;
+    display: inline;
+}
+.date {
+    font-size: 10px;
+}
+.line {
+    width:90%;
+    text-align:left;
+    margin-left:0
+}
+.participant_num {
+    display: inline;
+    align-items: right;
+    float: center;
+    padding-left: 40%;
+}
