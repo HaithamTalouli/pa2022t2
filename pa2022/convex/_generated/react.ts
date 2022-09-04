@@ -14,6 +14,7 @@ import type addUser from "../addUser";
 import type getPostsByNonPoster from "../getPostsByNonPoster";
 import type getPostsByPoster from "../getPostsByPoster";
 import type getUser from "../getUser";
+import type getUsers from "../getUsers";
 import type { OptimisticLocalStore as GenericOptimisticLocalStore } from "convex/browser";
 import type { ClientMutation, ClientQuery } from "convex/server";
 
@@ -31,6 +32,7 @@ export type ConvexAPI = {
     getPostsByNonPoster: ClientQuery<typeof getPostsByNonPoster>;
     getPostsByPoster: ClientQuery<typeof getPostsByPoster>;
     getUser: ClientQuery<typeof getUser>;
+    getUsers: ClientQuery<typeof getUsers>;
   };
   mutations: {
     addPost: ClientMutation<typeof addPost>;
