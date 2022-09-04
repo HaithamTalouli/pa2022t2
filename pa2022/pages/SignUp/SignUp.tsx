@@ -1,5 +1,5 @@
 import React, { FormEvent, useCallback, useEffect, useState } from "react"
-import { Route } from "react-router-dom"
+import { Link, Route } from "react-router-dom"
 import addPost from "../../convex/addPost"
 import { useMutation, useQuery } from "../../convex/_generated/react"
 import styles from '../../styles/signupstyles.module.css'
@@ -69,6 +69,7 @@ const SignUp = () => {
                     <button type="submit" className={styles.button}>Submit</button>
                 </div>
             </form>
+            <Link to="/login"> Log In</Link>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React, { FormEvent, useCallback, useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import { useQuery } from "../../convex/_generated/react"
 import styles from '../../styles/loginstyles.module.css'
 
@@ -52,6 +53,7 @@ const LogIn = () => {
                     <button type="submit" className={styles.button}>Submit</button>
                 </div>
             </form>
+            <Link to="/signup"> Sign Up</Link>
         </div>
     )
 }
