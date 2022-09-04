@@ -16,13 +16,6 @@ function MyApp(/*{ Component, pageProps }: AppProps*/) {
   // const routeResult = useRoutes(routes);
   if (typeof window !== 'undefined') {
   return (
-    // <div className="App">
-    //   <A href="/">Home</A>
-    //   {routeResult}
-    // </div>
-    <>
-       <ConvexProvider client={convex}>
-       <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Hometest />} />
