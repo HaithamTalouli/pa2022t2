@@ -1,0 +1,49 @@
+.card{
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 black;
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px 0 20px 50px;
+    transition: 0.3s;
+    width: 50%;
+  }
+  .jobForm{
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 black;
+    min-height: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px 0 20px 50px;
+    transition: 0.3s;
+    width: 50%;
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  .inputText{
+    width:75%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .inputFile{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+  .formSubmit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #dde1e4;
+    color: rgb(8, 8, 8);
+    border: 10px solid #eee;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(14, 13, 13);
+    text-shadow: #dde1e4;
+  }
