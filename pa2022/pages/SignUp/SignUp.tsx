@@ -1,7 +1,9 @@
 import React, { FormEvent, useCallback, useEffect, useState } from "react"
+import { Route } from "react-router-dom"
 import addPost from "../../convex/addPost"
 import { useMutation, useQuery } from "../../convex/_generated/react"
 import styles from '../../styles/signupstyles.module.css'
+import HomeScreen from "../About"
 
 // const CheckSubmition = (userName: string, userPassword: string) => {
 //     const user = useQuery('getUser', userName)

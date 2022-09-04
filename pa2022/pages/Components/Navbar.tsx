@@ -15,13 +15,22 @@ export const Navbar = () =>{
                 </li>
                 {/* <li className={styles.tablineup}>
                     <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/events"> Events</Link>
-                </li>
+    </li>*/}
                 <li className={styles.tablineup}>
                     <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/posts"> Make Post</Link>
-                </li> */}
+                </li> 
+                <li className={styles.tablineup}>
+                    <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/othersposts"> Events</Link>
+                </li> 
                 <li className={styles.tablineup}>
                     <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/about"> About Us</Link>
                 </li>
+                <li className={styles.tablineup}>
+                    <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/signup"> Sign Out</Link>
+                </li>
+                {/* <li className={styles.tablineup}>
+                    <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/login"> Log In</Link>
+                </li> */}
                 {/* <li className={styles.tablineup}>
                     <Link style={{ marginLeft: '1.5rem', fontSize: 20}} to="/profile"> Profile</Link>
                 </li> */}

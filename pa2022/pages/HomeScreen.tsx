@@ -1,11 +1,9 @@
 import React from "react";
 import styles from "../styles/homeScreen.module.css"
-import Navbar from "./Components/Navbar";
 
 const HomeScreen = () => {
     return(
         <div>
-            <Navbar></Navbar>
             <header>Volunteer Today</header>
             <img src={'../nature.jpg'} />
             <div className={styles.homeScreen}>
