@@ -10,19 +10,19 @@ function Navbar(){
             </a>
             <ul>
                 <li className={styles.tablineup}>
-                    <a style={{ marginLeft: '1rem' }} href="volunteer">Volunteer</a>
+                    <a style={{ marginLeft: '1.5rem', fontSize: 20}} href="volunteer">Volunteer</a>
                 </li>
                 <li className={styles.tablineup}>
-                    <a style={{ marginLeft: '1rem' }} href="events"> Events</a>
+                    <a style={{ marginLeft: '1.5rem', fontSize: 20}} href="events"> Events</a>
                 </li>
                 <li className={styles.tablineup}>
-                    <a style={{ marginLeft: '1rem' }} href="about"> About Us</a>
+                    <a style={{ marginLeft: '1.5rem', fontSize: 20}} href="about"> About Us</a>
                 </li>
                 <li className={styles.tablineup}>
-                    <a style={{ marginLeft: '1rem' }} href="events"> Events</a>
+                    <a style={{ marginLeft: '1.5rem', fontSize: 20}} href="events"> Events</a>
                 </li>
                 <li className={styles.tablineup}>
-                    <a style={{ marginLeft: '1rem' }} href="profile"> Profile</a>
+                    <a style={{ marginLeft: '1.5rem', fontSize: 20}} href="profile"> Profile</a>
                 </li>
             </ul>
         </nav>
